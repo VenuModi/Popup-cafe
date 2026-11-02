@@ -57,9 +57,6 @@ public class CampusCafe {
         }
 
         scanner.close();
-
-        // System.out.println("\nNext order number: " + nextOrderNumber);
-
     }
 
     public static void showMenu() {
