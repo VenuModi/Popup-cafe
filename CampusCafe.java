@@ -21,7 +21,9 @@ public class CampusCafe {
 
         Coffee coffe = new Coffee(cafeName, nextOrderNumber);
 
-        Order order1 = new Order(1, "phatcha", coffe);
+        Order order1 = new Order(12561, "phatcha", coffe);
+
+        System.out.println("Order number: " + order1.getOrderNumber() + " Customer name: " + order1.getCustomerName());
 
         while (isCafeOpen) {
 
