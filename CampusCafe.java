@@ -30,6 +30,24 @@ public class CampusCafe {
                     System.out.println("Prodcuts are shown here.");
                     break;
 
+                case 2:
+                    System.out.println("Place an order!");
+                    break;
+                    case 3: 
+                    System.out.println("3. Show all orders");
+                    break;
+                    case 4:
+                        System.out.println("4. View order queue");
+                        break;
+                     case 5:
+                            System.out.println("5. Prepare next order");
+                            break;
+                     case 6:
+                                System.out.println("6. Hand-out finished orders");
+                                break;
+                     case 7:
+                                    System.out.println("7. View today's stats"); 
+                                    break;
                     case 8:
                         System.out.println("Thank you for visting our cafe");
                         break;
