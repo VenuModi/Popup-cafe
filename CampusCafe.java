@@ -1,6 +1,8 @@
 
 import java.util.Scanner;
 
+import Enum.OrderStatus;
+
 public class CampusCafe {
 
     public static void main(String[] args) {
@@ -13,6 +15,13 @@ public class CampusCafe {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("\n=====WELCOME TO  " + cafeName + "!=====");
+
+        OrderStatus orderStatus = OrderStatus.NEW;
+        System.out.println("Orderstatus " + orderStatus);
+
+        Coffee coffe = new Coffee(cafeName, nextOrderNumber);
+
+        Order order1 = new Order(1, "phatcha", coffe);
 
         while (isCafeOpen) {
 
@@ -30,6 +39,7 @@ public class CampusCafe {
 
                 case 1:
                     System.out.println("Prodcuts are shown here.");
+
                     break;
                 case 2:
                     System.out.println("Place an order!");
