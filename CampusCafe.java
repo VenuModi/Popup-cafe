@@ -46,6 +46,7 @@ public class CampusCafe {
                     System.out.println("7. View today's stats");
                     break;
                 case 8:
+                    isCafeOpen = false;
                     System.out.println("Thank you for visting our cafe");
                     break;
 
