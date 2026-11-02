@@ -18,9 +18,13 @@ public class CampusCafe {
 
             showMenu();
 
-            System.out.println("Choose an option: ");
+            System.out.print("Choose an option: ");
 
             int menuChoice = scanner.nextInt();
+
+            if (isValidMenuChoice(menuChoice)) {
+                System.out.println("Invalid option try again!");
+            }
 
             switch (menuChoice) {
 
@@ -50,8 +54,10 @@ public class CampusCafe {
                     System.out.println("Thank you for visting our cafe");
                     break;
 
-                default:
-                    System.out.println("Invalid option");
+                /*
+                 * default:
+                 * System.out.println("Invalid option");
+                 */
             }
 
         }
@@ -69,5 +75,13 @@ public class CampusCafe {
         System.out.println("6. Hand-out finished orders");
         System.out.println("7. View today's stats");
         System.out.println("8. Exit");
+    }
+
+    public static boolean isValidMenuChoice(int menuChoice) {
+        if (menuChoice >= 1 || menuChoice < 9) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
