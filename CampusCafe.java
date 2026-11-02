@@ -70,5 +70,4 @@ public class CampusCafe {
         System.out.println("7. View today's stats");
         System.out.println("8. Exit");
     }
-
 }
