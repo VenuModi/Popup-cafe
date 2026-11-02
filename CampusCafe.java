@@ -1,12 +1,49 @@
+
+import java.util.Scanner;
+
 public class CampusCafe {
 
     public static void main(String[] args) {
 
         String cafeName = "CAMPUS CAFE";
 
-        System.out.println("=====WELCOME TO  " + cafeName + "!=====");
+        int nextOrderNumber = 1;//Orders starts with 1 not negative.
+        boolean isCafeOpen = true; //Cafe open is set to true
 
-        showMenu();
+        Scanner scanner = new Scanner(System.in);
+       
+
+        System.out.println("\n=====WELCOME TO  " + cafeName + "!=====");
+
+        while(isCafeOpen){
+
+
+              showMenu();
+
+              System.out.println("Choose an option: ");
+
+            int menuChoice = scanner.nextInt();
+
+            switch (menuChoice){
+
+                case 1:
+                    System.out.println("Prodcuts are shown here.");
+                    break;
+
+                    case 8:
+                        System.out.println("Thank you for visting our cafe");
+                        break;
+
+                        default:
+                            System.out.println("Invalid option");
+            }
+        
+        }
+
+        scanner.close();
+
+        // System.out.println("\nNext order number: " + nextOrderNumber);
+    
         
     }
 
