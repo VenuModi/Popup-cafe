@@ -27,7 +27,6 @@ public class CampusCafe {
                 case 1:
                     System.out.println("Prodcuts are shown here.");
                     break;
-
                 case 2:
                     System.out.println("Place an order!");
                     break;
